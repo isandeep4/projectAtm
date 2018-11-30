@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { WithdrawPageComponent } from './withdraw-page/withdraw-page.component';
@@ -10,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { AuthenticationService } from './authentication.service';
 import { HttpModule } from '@angular/http';
+import { DataStorageService } from './data-storage.service';
+
 
 
 @NgModule({
@@ -25,7 +25,7 @@ import { HttpModule } from '@angular/http';
     AppRoutingModule,
     HttpModule
   ],
-  providers: [AuthenticationService],
+  providers: [AuthenticationService, DataStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
