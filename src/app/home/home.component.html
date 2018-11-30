@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="container-heading">
+   <h4>Please Give The Card Details</h4> 
+  </div>
+  <div class="container-body">
+    <div class="row">
+      <div>
+        <label for="cardNum">Enter card Number</label>
+        <input type="text" id="cardNum" name="cardNum" [(ngModel)]="user.card_number">
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="pin">Enter Pin</label>
+        <input type="text" id="pin" name="pin" [(ngModel)]="user.pin">
+      </div>
+  </div>
+</div>
+<span>{{errMsg}}</span>
+  <div>
+    <button (click)="onLogin()">Login</button>
+  </div>
+</div>

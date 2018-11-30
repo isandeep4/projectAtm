@@ -1,0 +1,14 @@
+<div class="container">
+  <div>
+      <h3>
+          Cash withdrawals
+      </h3>
+  </div>
+  <div>
+    <label for="withdrawAmount">please enter the withdrawal amount</label>
+    <input type="text" id="withdrawAmount" [(ngModel)]="amount">
+  </div>
+  <div>
+      <button (click)="onWithdraw()">Submit</button>
+  </div>  
+</div>
