@@ -1,11 +1,34 @@
 <div class="container">
   <h4>Account Details</h4>
-  <div>
-    <label for="available_balance">Available balance</label>
-    {{user.balance}}
+  <div style="padding-right:500px" class="balance_Container">
+    <label for="available_balance">Available balance: </label>
+    <span>{{available_balance}}</span>
   </div>
   <div>
-    <label for="withdrawal_denomination">Withdrawal denomination</label>
-    
+    <div class="row">
+    <div>
+        <table style="width:100%; padding-right:500px" class="first">
+            <tr>
+              <th>Withdrawal denomination</th>
+            </tr>
+            <tr>
+              <td *ngFor="let x of Withdrawal_denomination">{{x}}</td>
+            </tr>
+          </table>
+    </div>
+    <div>
+        <table style="width:100%; padding-right:500px" class="second">
+            <tr>
+              <th>Counts</th> 
+            </tr>
+            <tr>
+              <td *ngFor="let y of count" >{{y}}</td>
+            </tr>
+          </table>
+    </div>      
+    </div>
+  </div>
+  <div>
+    <button (click)="onCancel()">Cancel Transaction</button>
   </div>
 </div>

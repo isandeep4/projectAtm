@@ -12,11 +12,15 @@ export class DataStorageService{
     constructor(private router: Router, private http: Http , private authenticationService: AuthenticationService){};
 
     storeUsers(user, key){
-
-        // let datas = JSON.stringify(user);
-         console.log("user is", user, key );
-        // console.log("data is", datas );
-        return this.http.put('https://ng-cash-withdrawal.firebaseio.com/users/' + key +'/cardFields/balance.json', user[key].cardFields.balance);
-
+       
+        return this.http.patch('https://ng-cash-withdrawal.firebaseio.com/users/' + key + '.json',
+            {
+            "atmFields": user[key].atmFields,
+            "cardFields": user[key].cardFields	
+            })
     }
+    storeDebit(user,key){
+        return this.http.post('https://ng-cash-withdrawal.firebaseio.com/users/' + key + '/transactionFields/debit.json', user[key].transactionFields.debit)
+    }
+    
 }
