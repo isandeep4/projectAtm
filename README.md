@@ -1,6 +1,9 @@
 # Atm
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+here Firebase realtime database hase been used to get data and update user fields calling patch and put method
+firbase url:https://console.firebase.google.com/u/0/project/ng-cash-withdrawal/database/ng-cash-withdrawal/data
+2 test users data has been set in ng-cash-withdrawal-export.json.
 
 ## Development server
 
