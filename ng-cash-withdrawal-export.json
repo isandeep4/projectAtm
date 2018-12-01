@@ -1,0 +1,53 @@
+{
+  "users" : {
+    "user1" : {
+      "atmFields" : {
+        "count" : [ 52 ],
+        "currency_denomination" : [ 1000 ],
+        "id" : "121"
+      },
+      "cardFields" : {
+        "balance" : 68000,
+        "card_number" : 546224566623212200,
+        "id" : "11",
+        "pin" : 1234
+      },
+      "transactionFields" : {
+        "debit" : {
+          "-LSdC1Es9edJwUtUst1F" : 500,
+          "-LSdC7-jUwrrgVC99XO8" : 1200,
+          "-LSdD-ydnrCh7G_cxlI6" : 1400,
+          "-LSdDMSPjpI5bjf1WrFN" : 123,
+          "-LSdDnNJ83CxFucIDSIm" : 1200,
+          "-LSdHLDD786igGu1aO-T" : 10000,
+          "-LSdL7mi1P0MX-a7yS20" : 1234,
+          "-LSdLNsI4hqVXTZXpA5E" : 1234,
+          "-LSdMTByg7Nm-_lHjbLy" : 12000,
+          "-LSd_s68_g3hrLRQThG-" : 1200,
+          "-LSddDZk_sZKr6MwGGFf" : 200,
+          "-LSddWEWmt9R6WiaKXc8" : 1200,
+          "-LSdzgr12zsklusMEjzP" : 6800,
+          "-LSf7Q02vUBrFIuht2Iz" : 5400,
+          "-LSf88YXxODTYAnUKcQs" : 600,
+          "-LSfDRx5UCiEvx7uux0x" : 52000
+        }
+      }
+    },
+    "user2" : {
+      "atmFields" : {
+        "count" : 500,
+        "currency_denomination" : 1000,
+        "id" : "122"
+      },
+      "cardFields" : {
+        "balance" : 390000,
+        "card_number" : 4855465666232122000,
+        "id" : "11",
+        "pin" : 1434
+      },
+      "transactionFields" : {
+        "debits" : 500
+      }
+    }
+  }
+}
