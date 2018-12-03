@@ -13,7 +13,7 @@ export class DataStorageService{
 
     storeUsers(user, key){
        
-        return this.http.patch('https://ng-cash-withdrawal.firebaseio.com/users/' + key + '.json',
+        return this.http.put('https://ng-cash-withdrawal.firebaseio.com/users/' + key + '.json',
             {
             "atmFields": user[key].atmFields,
             "cardFields": user[key].cardFields	
